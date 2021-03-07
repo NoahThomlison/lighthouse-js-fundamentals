@@ -1,0 +1,15 @@
+// change the values of `eatsPlants` and `eatsAnimals` to test your code
+var eatsPlants = 0
+var eatsAnimals = 0;
+
+/*
+ * Test your code agaist the followig possible input/output combinations of (`eatsPlants`, `eatsAnimals`, expected output):
+ * - (true, true, omnivore)
+ * - (false, true, carnivore)
+ * - (true, false, herbivore)
+ * - (false, false, undefined)
+ */
+
+var category = eatsPlants ? (eatsAnimals ? 'omnivore' : 'herbivore') : (eatsAnimals ? "carnivore" : 'undefined');
+
+console.log(category);
