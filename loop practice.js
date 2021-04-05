@@ -21,3 +21,5 @@ for (let i of ingredients){
 for (let forIndexRev = ingredients.length-1; forIndexRev >= 0; forIndexRev--){
   console.log(ingredients[forIndexRev]);
 }
+
+ingredients.forEach(console.log(ingredients))

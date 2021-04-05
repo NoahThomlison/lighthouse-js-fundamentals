@@ -1,27 +1,27 @@
 const calculateRectangleArea = function(length, width){
-  if ((length < 0)||(width < 0)){
-    return
+  if ((length < 0) || (width < 0)){
+    return;
   }
   let recArea = length * width;
   return recArea;
-}
+};
 
 const calculateTriangleArea = function(base, height){
-  if ((base < 0)||(height < 0)){
-    return
+  if ((base < 0) || (height < 0)){
+    return;
   }
-  let triArea = base * height/2;
+  let triArea = base * height / 2;
   return triArea;
-}
+};
 const calculateCircleArea = function(radius){
   if (radius < 0){
-    return
+    return;
   }
-  let circleArea = Math.PI * (radius * radius)
+  let circleArea = Math.PI * (radius * radius);
   return circleArea;
-}
+};
 
-let area
+let area;
 
 /*
 console.log(calculateRectangleArea(10, 5));     // should print 50
@@ -35,4 +35,4 @@ console.log(calculateTriangleArea(10, -5)); // should print undefined
 console.log(calculateCircleArea(10)); // should print 314.159...
 console.log(calculateCircleArea(3.5)); // should heightprint 38.484...
 console.log(calculateCircleArea(-1)); // should print undefined
-*\
+*/
